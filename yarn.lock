@@ -2916,7 +2916,6 @@ __metadata:
     react-native: 0.78.0
     react-native-gesture-handler: ^2.24.0
     react-native-reanimated: ^3.17.1
-    react-native-reanimated-carousel: ^4.0.2
     react-native-safe-area-context: ^5.3.0
     react-native-screens: ^4.9.1
     react-native-svg: ^15.11.2
@@ -8001,18 +8000,6 @@ __metadata:
     react: ">=18.2.0"
     react-native: ">=0.73.0"
   checksum: 4e07c1e34c01c8d50fd7c1d0460db06f6f0515197405230386a8ffb950cb724b10743af032310d1384df0a90059bfb8992ba2d93344ce86315315f0493feccc2
-  languageName: node
-  linkType: hard
-
-"react-native-reanimated-carousel@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "react-native-reanimated-carousel@npm:4.0.2"
-  peerDependencies:
-    react: ">=18.0.0"
-    react-native: ">=0.70.3"
-    react-native-gesture-handler: ">=2.9.0"
-    react-native-reanimated: ">=3.0.0"
-  checksum: 1f3d0434410a9e365420d2aa029d7af087a7dee6edd9be62019cbb3e14b13bb25a5ea4790fcc9a158208b027a3e7203ff02e62184753e6c3cb692392f8dcfdf4
   languageName: node
   linkType: hard
 
