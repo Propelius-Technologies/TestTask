@@ -27,20 +27,21 @@ const MenuOptionsList: React.FC<MenuOptionsListProps> = ({
   }) => {
     const isSelected = selectedId === item.id;
     return (
-      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.itemContainer}>
         <TouchableOpacity
           onPress={() => setSelectedId(item.id)}
-          style={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: isSelected ? 'black' : 'transparent', // Change background when selected
-            borderRadius: 10,
-            padding: 10,
-            margin: 5,
-          }}>
+          style={[
+            styles.iconContainer,
+            {backgroundColor: isSelected ? 'black' : 'transparent'},
+          ]}>
           <View style={{padding: 5}}>{item.icon}</View>
         </TouchableOpacity>
-        <Text style={{color: 'black', fontWeight: '700', fontSize: 15}}>
+        <Text
+          style={{
+            color: 'black',
+            fontWeight: '700',
+            fontSize: 12,
+          }}>
           {item.name}
         </Text>
       </View>
@@ -62,6 +63,18 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 10,
     marginHorizontal: 10,
+  },
+  itemContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 5,
+  },
+  iconContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    padding: 10,
+    margin: 5,
   },
   optionContainer: {
     padding: 10,

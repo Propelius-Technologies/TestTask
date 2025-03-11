@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 
 interface FirstCarouselProps {
-  images: string[];
-  setSelectedImage: (image: string) => void;
+  images: string[] | null;
+  setSelectedImage: (image: string) => void | null;
   flatListRef: React.RefObject<FlatList<string> | null>;
 }
 
